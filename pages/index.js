@@ -12,8 +12,31 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
+            <style>
+                {`
+                    a{
+                        display: 'inline-block';
+                        color: lime;
+                        margin: 10px 20px;
+                        font-weight: bolder;
+                    }
+                `}
+            </style>
 
+            <main>
+                <div>
+                    <Link href={`/`}>
+                        <a>Home</a>
+                    </Link>
+
+                    <Link href={`/user`}>
+                        <a>user</a>
+                    </Link>
+
+                    <Link href={`/post`}>
+                        <a>post</a>
+                    </Link>
+                </div>
             </main>
         </>
     )
