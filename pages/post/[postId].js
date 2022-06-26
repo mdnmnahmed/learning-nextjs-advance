@@ -25,7 +25,8 @@ export const getStaticProps = async ({ params }) => {
     return {
         props: {
             postData
-        }
+        },
+        revalidate: 120       // time (sec) after data fetched static file generated on server
     }
 }
 
