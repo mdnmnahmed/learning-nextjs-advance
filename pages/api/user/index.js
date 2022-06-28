@@ -3,11 +3,11 @@ import UserModal from "../../../modals/UserModal";
 import { errorHandler } from "../../../utils/errorHandler";
 import { responseHandler } from "../../../utils/responseHandler";
 import { validateInputFields } from "../../../utils/validateInputFields";
+import bcrypt from 'bcrypt'
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         errorHandler('Invalid Request', res);
-        return;
     }
 
     try {
@@ -15,9 +15,16 @@ export default async function handler(req, res) {
         validateInputFields({ name, email, password });
 
         await dbConnect();
-        const user = new UserModal(req.body);
+
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        const user = new UserModal({
+            ...req.body,
+            password: hashedPassword
+        });
         const savedUser = await user.save();
         if (savedUser) {
+            delete savedUser._doc.password;
             responseHandler(savedUser, res, 'Signup Success');
         }
     } catch (error) {
