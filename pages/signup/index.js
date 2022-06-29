@@ -5,29 +5,29 @@ const Signup = () => {
     return (
         <>
             <section className="text-gray-400 body-font">
-                <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
-                    <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+                <div className="container flex flex-wrap items-center px-5 py-24 mx-auto">
+                    <div className="pr-0 lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0">
                         <div align="center">
-                            <h1 className="title-font font-medium text-3xl text-white">N-News</h1>
-                            <p className="leading-relaxed mt-4">Signup and Read n number of News.</p>
+                            <h1 className="text-3xl font-medium text-white title-font">N-News</h1>
+                            <p className="mt-4 leading-relaxed">Signup and Read n number of News.</p>
                         </div>
                     </div>
-                    <div className="lg:w-2/6 md:w-1/2 bg-gray-800 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-                        <h2 className="text-white text-lg font-medium title-font mb-5">Signup</h2>
+                    <div className="flex flex-col w-full p-8 mt-10 bg-gray-800 bg-opacity-50 rounded-lg lg:w-2/6 md:w-1/2 md:ml-auto md:mt-0">
+                        <h2 className="mb-5 text-lg font-medium text-white title-font">Signup</h2>
                         <div className="relative mb-4">
-                            <label for="full-name" className="leading-7 text-sm text-gray-400">Full Name</label>
-                            <input type="text" id="full-name" name="full-name" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <label htmlFor="full-name" className="text-sm leading-7 text-gray-400">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" className="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-600 border border-gray-600 rounded outline-none bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 focus:border-blue-500" />
                         </div>
                         <div className="relative mb-4">
-                            <label for="email" className="leading-7 text-sm text-gray-400">Email</label>
-                            <input type="email" id="email" name="email" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <label htmlFor="email" className="text-sm leading-7 text-gray-400">Email</label>
+                            <input type="email" id="email" name="email" className="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-600 border border-gray-600 rounded outline-none bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 focus:border-blue-500" />
                         </div>
                         <div className="relative mb-4">
-                            <label for="password" className="leading-7 text-sm text-gray-400">Password</label>
-                            <input type="password" id="password" name="password" className="w-full bg-gray-600 bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 rounded border border-gray-600 focus:border-blue-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <label htmlFor="password" className="text-sm leading-7 text-gray-400">Password</label>
+                            <input type="password" id="password" name="password" className="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-600 border border-gray-600 rounded outline-none bg-opacity-20 focus:bg-transparent focus:ring-2 focus:ring-blue-900 focus:border-blue-500" />
                         </div>
-                        <button className="text-white bg-blue-500 border-0 py-1 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Signup</button>
-                        <p className="text-xs mt-3">Already have an account? <Link href="/login"><a>Login.</a></Link></p>
+                        <button className="px-8 py-1 text-lg text-white bg-blue-500 border-0 rounded focus:outline-none hover:bg-blue-600">Signup</button>
+                        <p className="mt-3 text-xs">Already have an account? <Link href="/login"><a>Login.</a></Link></p>
                     </div>
                 </div>
             </section>
