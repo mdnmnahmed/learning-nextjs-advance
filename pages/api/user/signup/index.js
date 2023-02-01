@@ -1,9 +1,9 @@
-import { dbConnect } from "../../../lib/dbConnect";
-import UserModal from "../../../modals/UserModal";
-import { errorHandler } from "../../../utils/errorHandler";
-import { responseHandler } from "../../../utils/responseHandler";
-import { validateInputFields } from "../../../utils/validateInputFields";
 import bcrypt from 'bcrypt'
+import { dbConnect } from "../../../../service_backend/lib/dbConnect";
+import UserModal from "../../../../service_backend/modals/UserModal";
+import { errorHandler } from "../../../../service_backend/utils/errorHandler";
+import { responseHandler } from "../../../../service_backend/utils/responseHandler";
+import { validateInputFields } from "../../../../service_backend/utils/validateInputFields";
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
