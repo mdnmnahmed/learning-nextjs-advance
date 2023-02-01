@@ -9,7 +9,7 @@ const Navigation = ({ navColor }) => {
                     <a className="flex items-center mb-4 font-medium text-white title-font md:mb-0">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 p-2 text-white bg-indigo-500 rounded-full" viewBox="0 0 24 24">
                         </svg>
-                        <span className="ml-3 text-xl">N-News</span>
+                        <span className="ml-3 text-xl">Next.JS-Advance-Learning</span>
                     </a>
                     <nav className="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto">
                         <Link href={`/`}>

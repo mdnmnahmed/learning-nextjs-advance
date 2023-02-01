@@ -8,7 +8,7 @@ const Login = () => {
                 <div className="container flex flex-wrap items-center px-5 py-24 mx-auto">
                     <div className="pr-0 lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0">
                         <div align="center">
-                            <h1 className="text-3xl font-medium text-white title-font">N-News</h1>
+                            <h1 className="text-3xl font-medium text-white title-font">Next.JS-Advance-Learning</h1>
                             <p className="mt-4 leading-relaxed">Login and Read n number of News.</p>
                         </div>
                     </div>
