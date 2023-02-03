@@ -1,6 +1,10 @@
 [
     {
-        "topic": "1. React Customizable Counter Custom-Hooks",
-        "url": "/react/counter-custom-hook"
+        "topic": "React Custom-Hooks",
+        "url": "/react-custom-hook"
+    },
+    {
+        "topic": "React UseMemo",
+        "url": "/react/hook-use-memo"
     }
 ]
