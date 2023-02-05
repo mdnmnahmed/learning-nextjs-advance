@@ -1,5 +1,10 @@
 import React, { useState, useMemo } from 'react';
 
+/**
+    useCallback & useMemo both use for Memoize
+    useMemo => Memoize a value
+ */
+
 const HookUseMemo = () => {
 
     const [counter, setCounter] = useState(1);
